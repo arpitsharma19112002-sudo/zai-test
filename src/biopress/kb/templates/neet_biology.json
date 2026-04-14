@@ -1,0 +1,346 @@
+{
+  "exam": "NEET",
+  "subject": "Biology",
+  "topics": [
+    {
+      "id": "bio-001",
+      "name": "The Living World",
+      "subtopics": [
+        "Diversity in living world",
+        "Taxonomy and classification",
+        "Binomial nomenclature",
+        "Taxonomic categories"
+      ],
+      "weightage": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "bio-002",
+      "name": "Biological Classification",
+      "subtopics": [
+        "Five kingdom classification",
+        "Monera",
+        "Protista",
+        "Fungi"
+      ],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-003",
+      "name": "Plant Kingdom",
+      "subtopics": ["Algae", "Bryophytes", "Pteridophytes", "Gymnosperms"],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-004",
+      "name": "Animal Kingdom",
+      "subtopics": [
+        "Phylum Porifera",
+        "Phylum Coelenterata",
+        "Phylum Arthropoda",
+        "Phylum Chordata"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-005",
+      "name": "Morphology of Flowering Plants",
+      "subtopics": ["Root", "Stem", "Leaf", "Flower"],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-006",
+      "name": "Anatomy of Flowering Plants",
+      "subtopics": ["Tissues", "Root anatomy", "Stem anatomy", "Leaf anatomy"],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-007",
+      "name": "Structural Organization in Animals",
+      "subtopics": [
+        "Animal tissues",
+        "Epithelial tissue",
+        "Connective tissue",
+        "Muscular tissue"
+      ],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-008",
+      "name": "Cell: The Unit of Life",
+      "subtopics": [
+        "Cell theory",
+        "Cell membrane",
+        "Cell wall",
+        "Cell organelles"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-009",
+      "name": "Biomolecules",
+      "subtopics": ["Carbohydrates", "Proteins", "Lipids", "Nucleic acids"],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-010",
+      "name": "Cell Cycle and Cell Division",
+      "subtopics": ["Interphase", "Mitosis", "Meiosis", "Cytokinesis"],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-011",
+      "name": "Photosynthesis",
+      "subtopics": [
+        "Light reactions",
+        "Dark reactions",
+        "C3 and C4 plants",
+        "Factors affecting photosynthesis"
+      ],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "bio-012",
+      "name": "Respiration",
+      "subtopics": [
+        "Glycolysis",
+        "Krebs cycle",
+        "Electron transport system",
+        "Anaerobic respiration"
+      ],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "bio-013",
+      "name": "Plant Growth and Development",
+      "subtopics": [
+        "Growth regulators",
+        "Photoperiodism",
+        "Vernalization",
+        "Seed dormancy"
+      ],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-014",
+      "name": "Body Fluids and Circulation",
+      "subtopics": ["Blood", "Heart", "Blood vessels", "Circulatory patterns"],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-015",
+      "name": "Excretory Products and Their Elimination",
+      "subtopics": ["Kidney", "Nephron", "Urine formation", "Dialysis"],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-016",
+      "name": "Locomotion and Movement",
+      "subtopics": ["Skeletal system", "Joints", "Muscles", "Movement"],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-017",
+      "name": "Neural Control and Coordination",
+      "subtopics": ["Neuron", "Nerve impulse", "Synapse", "Reflex arc"],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "bio-018",
+      "name": "Chemical Coordination and Integration",
+      "subtopics": [
+        "Hormones",
+        "Endocrine glands",
+        "Feedback mechanism",
+        "Human endocrine system"
+      ],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "bio-019",
+      "name": "Reproduction in Organisms",
+      "subtopics": [
+        "Asexual reproduction",
+        "Sexual reproduction",
+        "Gametogenesis",
+        "Fertilization"
+      ],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-020",
+      "name": "Sexual Reproduction in Flowering Plants",
+      "subtopics": [
+        "Flower structure",
+        "Microsporogenesis",
+        "Megasporogenesis",
+        "Double fertilization"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-021",
+      "name": "Human Reproduction",
+      "subtopics": [
+        "Male reproductive system",
+        "Female reproductive system",
+        "Gametogenesis",
+        "Embryonic development"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-022",
+      "name": "Reproductive Health",
+      "subtopics": [
+        "Contraception",
+        "Sexually transmitted diseases",
+        "Infertility",
+        "Population control"
+      ],
+      "weightage": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "bio-023",
+      "name": "Principles of Inheritance and Variation",
+      "subtopics": [
+        "Mendel's laws",
+        "Chromosome theory",
+        "Linkage",
+        "Mutation"
+      ],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "bio-024",
+      "name": "Molecular Basis of Inheritance",
+      "subtopics": ["DNA structure", "DNA replication", "RNA", "Central dogma"],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "bio-025",
+      "name": "Evolution",
+      "subtopics": [
+        "Darwin's theory",
+        "Evidence of evolution",
+        "Natural selection",
+        "Human evolution"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-026",
+      "name": "Human Health and Disease",
+      "subtopics": ["Common diseases", "Immunity", "Vaccines", "Cancer"],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-027",
+      "name": "Strategies for Enhancement in Food Production",
+      "subtopics": [
+        "Animal husbandry",
+        "Plant breeding",
+        "Tissue culture",
+        "Biofortification"
+      ],
+      "weightage": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "bio-028",
+      "name": "Microbes in Human Welfare",
+      "subtopics": [
+        "Antibiotics",
+        "Biogas",
+        "Biocontrol agents",
+        "Industrial microbiology"
+      ],
+      "weightage": 3,
+      "difficulty": "easy"
+    },
+    {
+      "id": "bio-029",
+      "name": "Biotechnology - Principles and Processes",
+      "subtopics": ["Recombinant DNA", "Vectors", "PCR", "Cloning"],
+      "weightage": 4,
+      "difficulty": "hard"
+    },
+    {
+      "id": "bio-030",
+      "name": "Biotechnology and Its Applications",
+      "subtopics": [
+        "Transgenic organisms",
+        "Gene therapy",
+        "DNA fingerprinting",
+        "Biosafety"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-031",
+      "name": "Ecology and Environment",
+      "subtopics": [
+        "Ecosystem",
+        "Food chain",
+        "Ecological pyramids",
+        "Biogeochemical cycles"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "bio-032",
+      "name": "Biodiversity and Conservation",
+      "subtopics": [
+        "Patterns of biodiversity",
+        "Conservation",
+        "Hotspots",
+        "Endangered species"
+      ],
+      "weightage": 3,
+      "difficulty": "easy"
+    },
+    {
+      "id": "bio-033",
+      "name": "Environmental Issues",
+      "subtopics": [
+        "Pollution",
+        "Global warming",
+        "Ozone depletion",
+        "Deforestation"
+      ],
+      "weightage": 3,
+      "difficulty": "easy"
+    }
+  ],
+  "patterns": {
+    "mcq_count": 90,
+    "numerical_count": 0
+  }
+}

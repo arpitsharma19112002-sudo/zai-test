@@ -1,0 +1,140 @@
+{
+  "atomic structure": [
+    {
+      "question": "Who discovered the electron?",
+      "options": {
+        "A": "J.J. Thomson",
+        "B": "Ernest Rutherford",
+        "C": "James Chadwick",
+        "D": "Niels Bohr"
+      },
+      "correct_answer": "A",
+      "explanation": "J.J. Thomson discovered the electron through his cathode ray tube experiments in 1897."
+    },
+    {
+      "question": "What is the charge on an electron?",
+      "options": {
+        "A": "+1.6 × 10⁻¹⁹ C",
+        "B": "-1.6 × 10⁻¹⁹ C",
+        "C": "Zero",
+        "D": "-1.6 × 10⁻¹⁸ C"
+      },
+      "correct_answer": "B",
+      "explanation": "The charge on an electron is -1.6 × 10⁻¹⁹ Coulombs, the smallest unit of negative charge."
+    },
+    {
+      "question": "What is the atomic number of carbon?",
+      "options": {
+        "A": "6",
+        "B": "12",
+        "C": "8",
+        "D": "14"
+      },
+      "correct_answer": "A",
+      "explanation": "Carbon has 6 protons, so its atomic number is 6."
+    },
+    {
+      "question": "Who proposed the planetary model of the atom?",
+      "options": {
+        "A": "Niels Bohr",
+        "B": "Ernest Rutherford",
+        "C": "J.J. Thomson",
+        "D": "Arnold Sommerfeld"
+      },
+      "correct_answer": "B",
+      "explanation": "Ernest Rutherford proposed the planetary model of the atom in 1911."
+    },
+    {
+      "question": "What particle has no charge?",
+      "options": {
+        "A": "Proton",
+        "B": "Electron",
+        "C": "Neutron",
+        "D": "Positron"
+      },
+      "correct_answer": "C",
+      "explanation": "The neutron has no charge, while protons are positive and electrons are negative."
+    }
+  ],
+  "chemical bonding": [
+    {
+      "question": "What type of bond forms between metal and non-metal atoms?",
+      "options": {
+        "A": "Covalent bond",
+        "B": "Ionic bond",
+        "C": "Metallic bond",
+        "D": "Hydrogen bond"
+      },
+      "correct_answer": "B",
+      "explanation": "Ionic bonds form between metals (electron donors) and non-metals (electron acceptors)."
+    },
+    {
+      "question": "Which molecule has a double bond?",
+      "options": {
+        "A": "HCl",
+        "B": "O₂",
+        "C": "NH₃",
+        "D": "CH₄"
+      },
+      "correct_answer": "B",
+      "explanation": "Oxygen gas (O₂) has a double bond between the two oxygen atoms."
+    }
+  ],
+  "default": [
+    {
+      "question": "What is the atomic number of oxygen?",
+      "options": {
+        "A": "8",
+        "B": "16",
+        "C": "6",
+        "D": "10"
+      },
+      "correct_answer": "A",
+      "explanation": "Oxygen has 8 protons, so its atomic number is 8."
+    },
+    {
+      "question": "What is the pH of pure water?",
+      "options": {
+        "A": "0",
+        "B": "7",
+        "C": "14",
+        "D": "1"
+      },
+      "correct_answer": "B",
+      "explanation": "Pure water is neutral with a pH of 7."
+    },
+    {
+      "question": "Which gas is released when an acid reacts with a metal?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Nitrogen",
+        "C": "Hydrogen",
+        "D": "Carbon dioxide"
+      },
+      "correct_answer": "C",
+      "explanation": "Acids react with metals to produce hydrogen gas."
+    },
+    {
+      "question": "What is the chemical formula for water?",
+      "options": {
+        "A": "H₂O",
+        "B": "HO₂",
+        "C": "H₂O₂",
+        "D": "OH₂"
+      },
+      "correct_answer": "A",
+      "explanation": "Water is H₂O - two hydrogen atoms bonded to one oxygen atom."
+    },
+    {
+      "question": "What type of bond involves sharing of electrons?",
+      "options": {
+        "A": "Ionic bond",
+        "B": "Covalent bond",
+        "C": "Metallic bond",
+        "D": "Van der Waals bond"
+      },
+      "correct_answer": "B",
+      "explanation": "Covalent bonds involve the sharing of electron pairs between atoms."
+    }
+  ]
+}

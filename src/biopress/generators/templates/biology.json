@@ -1,0 +1,140 @@
+{
+  "cell biology": [
+    {
+      "question": "What is known as the powerhouse of the cell?",
+      "options": {
+        "A": "Nucleus",
+        "B": "Mitochondria",
+        "C": "Ribosome",
+        "D": "Golgi apparatus"
+      },
+      "correct_answer": "B",
+      "explanation": "Mitochondria produce ATP through cellular respiration, providing energy for the cell."
+    },
+    {
+      "question": "Which organelle is responsible for protein synthesis?",
+      "options": {
+        "A": "Nucleus",
+        "B": "Ribosome",
+        "C": "Lysosome",
+        "D": "Endoplasmic reticulum"
+      },
+      "correct_answer": "B",
+      "explanation": "Ribosomes are the sites of protein synthesis in cells."
+    },
+    {
+      "question": "What is the function of the nucleus?",
+      "options": {
+        "A": "Energy production",
+        "B": "DNA storage and cell division",
+        "C": "Protein synthesis",
+        "D": "Waste removal"
+      },
+      "correct_answer": "B",
+      "explanation": "The nucleus contains DNA and controls cell activities including division."
+    },
+    {
+      "question": "Who proposed the cell theory?",
+      "options": {
+        "A": "Robert Hooke",
+        "B": "Schleiden and Schwann",
+        "C": "Virchow",
+        "D": "Leeuwenhoek"
+      },
+      "correct_answer": "B",
+      "explanation": "Matthias Schleiden and Theodor Schwann proposed the cell theory."
+    },
+    {
+      "question": "Which organelle contains digestive enzymes?",
+      "options": {
+        "A": "Lysosome",
+        "B": "Ribosome",
+        "C": "Mitochondria",
+        "D": "Centrosome"
+      },
+      "correct_answer": "A",
+      "explanation": "Lysosomes contain digestive enzymes that break down waste materials."
+    }
+  ],
+  "human physiology": [
+    {
+      "question": "What is the normal resting heart rate for adults?",
+      "options": {
+        "A": "40-60 bpm",
+        "B": "60-100 bpm",
+        "C": "100-120 bpm",
+        "D": "120-140 bpm"
+      },
+      "correct_answer": "B",
+      "explanation": "Normal resting heart rate for adults is 60-100 beats per minute."
+    },
+    {
+      "question": "Which blood cells fight infections?",
+      "options": {
+        "A": "Red blood cells",
+        "B": "White blood cells",
+        "C": "Platelets",
+        "D": "Plasma"
+      },
+      "correct_answer": "B",
+      "explanation": "White blood cells (leukocytes) are part of the immune system and fight infections."
+    }
+  ],
+  "default": [
+    {
+      "question": "What is the basic unit of life?",
+      "options": {
+        "A": "Atom",
+        "B": "Molecule",
+        "C": "Cell",
+        "D": "Tissue"
+      },
+      "correct_answer": "C",
+      "explanation": "The cell is the basic structural and functional unit of all living organisms."
+    },
+    {
+      "question": "What is the largest organ in the human body?",
+      "options": {
+        "A": "Liver",
+        "B": "Brain",
+        "C": "Skin",
+        "D": "Heart"
+      },
+      "correct_answer": "C",
+      "explanation": "Skin is the largest organ, covering about 20 square feet in adults."
+    },
+    {
+      "question": "Which organelle is found only in plant cells?",
+      "options": {
+        "A": "Mitochondria",
+        "B": "Nucleus",
+        "C": "Chloroplast",
+        "D": "Ribosome"
+      },
+      "correct_answer": "C",
+      "explanation": "Chloroplasts are found only in plant cells and carry out photosynthesis."
+    },
+    {
+      "question": "What is the process by which plants make food?",
+      "options": {
+        "A": "Respiration",
+        "B": "Photosynthesis",
+        "C": "Digestion",
+        "D": "Fermentation"
+      },
+      "correct_answer": "B",
+      "explanation": "Photosynthesis is the process by which plants convert sunlight into food."
+    },
+    {
+      "question": "How many chromosomes do humans have?",
+      "options": {
+        "A": "23",
+        "B": "44",
+        "C": "46",
+        "D": "48"
+      },
+      "correct_answer": "C",
+      "explanation": "Humans have 46 chromosomes (23 pairs) in each cell."
+    }
+  ]
+}

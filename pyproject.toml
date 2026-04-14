@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biopress"
+version = "0.1.0"
+description = "Educational content generation tool for NEET/JEE exams"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "BioPress Team"}
+]
+dependencies = [
+    "typer[all]>=0.12.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "sympy>=1.12",
+    "reportlab>=4.0",
+    "rich>=13.0",
+    "nicegui>=1.3",
+    "fastapi>=0.100",
+    "uvicorn>=0.23",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.1",
+    "mypy>=1.5",
+    "httpx>=0.26.0",
+]
+
+[project.scripts]
+biopress = "biopress.cli.app:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,54 @@
+{
+  "newton's laws": [
+    {
+      "assertion": "All mammals are warm-blooded.",
+      "reason": "Warm-blooded animals maintain constant body temperature.",
+      "correct_option": "A",
+      "explanation": "Both assertion and reason are true, and the reason correctly explains the assertion. Mammals are indeed warm-blooded (homeothermic)."
+    },
+    {
+      "assertion": "Newton's first law is also called the law of inertia.",
+      "reason": "Inertia is the tendency of objects to resist changes in motion.",
+      "correct_option": "A",
+      "explanation": "Both assertion and reason are true, and the reason correctly explains the assertion."
+    },
+    {
+      "assertion": "Force and acceleration are directly proportional.",
+      "reason": "According to Newton's second law, F = ma.",
+      "correct_option": "A",
+      "explanation": "Both assertion and reason are true, and the reason correctly explains the assertion."
+    },
+    {
+      "assertion": "Action and reaction forces act on the same body.",
+      "reason": "They are equal in magnitude and opposite in direction.",
+      "correct_option": "B",
+      "explanation": "The assertion is false, while the reason is true. Action and reaction forces act on different bodies."
+    },
+    {
+      "assertion": "The SI unit of force is dyne.",
+      "reason": "Force equals mass times acceleration.",
+      "correct_option": "C",
+      "explanation": "The assertion is false (SI unit is Newton), but the reason is true."
+    }
+  ],
+  "default": [
+    {
+      "assertion": "Acceleration due to gravity is 9.8 m/s² on Earth.",
+      "reason": "It is the rate of change of velocity due to Earth's gravitational pull.",
+      "correct_option": "A",
+      "explanation": "Both assertion and reason are true, and the reason correctly explains the assertion."
+    },
+    {
+      "assertion": "Momentum is a scalar quantity.",
+      "reason": "It has only magnitude.",
+      "correct_option": "B",
+      "explanation": "The assertion is false (momentum is a vector), while the reason is true."
+    },
+    {
+      "assertion": "Work done is maximum when force and displacement are perpendicular.",
+      "reason": "Work = Force × Displacement × cosθ.",
+      "correct_option": "C",
+      "explanation": "The assertion is false (work is zero when perpendicular), but the reason is true."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "exam": "SYNCEXAM",
+  "subject": "Physics",
+  "topics": [
+    {
+      "id": "s-001",
+      "name": "Synced Topic",
+      "weightage": 15
+    }
+  ]
+}

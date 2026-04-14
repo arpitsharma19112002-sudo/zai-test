@@ -1,82 +1,85 @@
-# zai-test
+# BioPress Designer
 
-Welcome to **zai-test** - A well-structured repository template with comprehensive documentation, AI prompt management, and development workflows.
+Educational content generation tool for NEET/JEE exams.
 
-## What is this?
+## Features
 
-This repository serves as a modern project template that includes:
+- **CLI Interface** - Easy-to-use command-line tool
+- **Multi-LLM Support** - Works with MiMo Claw, Kilo Claw, Grok, Claude, Ollama
+- **Question Generation** - MCQ, Numerical, Case-based, Assertion-Reason
+- **PDF Export** - NEET 2-column, NCERT, Bilingual, OMR-ready styles
+- **Two-Stage Validation** - L1 (SymPy) + L2 (LLM)
+- **Knowledge Base** - Comprehensive syllabus and rules
+- **Visual Editor** - NiceGUI-based review and editing
+- **REST API** - FastAPI endpoints for integration
 
-- **Structured Documentation Hub** - Organized docs for architecture, development, tutorials, and reference
-- **AI Prompt Management** - Dedicated folder structure for system prompts, prompt libraries, and experiments
-- **GitHub Integration** - Issue templates, PR templates, and CI/CD workflows
-- **Development Standards** - ADRs, meeting notes, sprint planning, and dev logs
+## Installation
 
-## Why use this structure?
+```bash
+pip install biopress
+```
 
-- **Single Source of Truth** - Everything has its place, making it easy to find and maintain
-- **Scalable** - Grows with your project from prototype to production
-- **AI-Ready** - Built-in prompt management for AI-assisted development
-- **Team-Friendly** - Clear contribution guidelines and documentation standards
+Or install from source:
+
+```bash
+git clone <repo>
+cd biopress
+pip install -e .
+```
 
 ## Quick Start
 
 ```bash
-# Clone the repository
-git clone https://github.com/arpitsharma19112002-sudo/zai-test.git
-cd zai-test
+# Show help
+biopress --help
 
-# Explore the structure
-tree -L 2
+# Generate questions
+biopress generate --exam NEET --subject Physics --type mcq --count 10 --topic "Newton's Laws"
 
-# Start developing
-# Add your code in src/ or app/
+# Export to PDF
+biopress export --input questions.json --output quiz.pdf --style neet
+
+# Review and edit
+biopress review launch --load questions.json
+
+# Start API server
+biopress api start
 ```
 
-## Quick Links
+## Commands
 
-| Resource | Location | Description |
-|----------|----------|-------------|
-| [Architecture Docs](docs/architecture/) | `docs/architecture/` | Design decisions & diagrams |
-| [Tutorials](docs/tutorials/) | `docs/tutorials/` | Learning-oriented guides |
-| [How-To Guides](docs/how-to/) | `docs/how-to/` | Task-oriented guides |
-| [API Reference](docs/reference/) | `docs/reference/` | Technical specifications |
-| [AI Prompts](docs/prompts/) | `docs/prompts/` | Prompt library & experiments |
-| [Roadmap](ROADMAP.md) | Root | Project vision & milestones |
-| [Contributing](CONTRIBUTING.md) | Root | How to contribute |
+- `generate` - Generate questions
+- `validate` - Validate content
+- `review` - Visual review tool
+- `export` - Export to PDF
+- `config` - Manage configuration
+- `kb` - Knowledge base management
+- `api` - Start API server
 
-## Project Structure
+## Configuration
 
-```
-zai-test/
-├── README.md                  # You are here
-├── LICENSE
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
-├── ROADMAP.md
-├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   └── workflows/
-├── docs/
-│   ├── architecture/
-│   ├── development/
-│   ├── plans/
-│   ├── prompts/
-│   ├── tutorials/
-│   ├── how-to/
-│   ├── reference/
-│   └── images/
-├── src/
-└── tests/
+```bash
+biopress config set provider ollama
+biopress config set output_dir ./output
+biopress config set language english
 ```
 
-## Getting Help
+## Development
 
-- Check the [documentation](docs/index.md) for detailed guides
-- Open an [issue](https://github.com/arpitsharma19112002-sudo/zai-test/issues) for bugs or feature requests
-- Review [contributing guidelines](CONTRIBUTING.md) before submitting PRs
+```bash
+# Install dev dependencies
+pip install -e ".[dev]"
+
+# Run tests
+pytest tests/ -v
+
+# Lint code
+ruff check src/
+
+# Type check
+mypy src/
+```
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT

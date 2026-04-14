@@ -1,0 +1,326 @@
+{
+  "exam": "NEET",
+  "subject": "Chemistry",
+  "topics": [
+    {
+      "id": "chem-001",
+      "name": "Some Basic Concepts of Chemistry",
+      "subtopics": [
+        "Atomic mass and molecular mass",
+        "Mole concept",
+        "Stoichiometry",
+        "Limiting reagent"
+      ],
+      "weightage": 3,
+      "difficulty": "easy"
+    },
+    {
+      "id": "chem-002",
+      "name": "Structure of Atom",
+      "subtopics": [
+        "Bohr model",
+        "Quantum numbers",
+        "Electronic configuration",
+        "Pauli exclusion principle"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-003",
+      "name": "Classification of Elements and Periodicity",
+      "subtopics": [
+        "Modern periodic table",
+        "Periodic trends",
+        "Ionization energy",
+        "Electronegativity"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-004",
+      "name": "Chemical Bonding and Molecular Structure",
+      "subtopics": [
+        "VSEPR theory",
+        "Hybridization",
+        "Molecular orbital theory",
+        "Hydrogen bonding"
+      ],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "chem-005",
+      "name": "States of Matter",
+      "subtopics": [
+        "Gas laws",
+        "Kinetic theory",
+        "Intermolecular forces",
+        "Critical temperature"
+      ],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-006",
+      "name": "Thermodynamics",
+      "subtopics": [
+        "First law of thermodynamics",
+        "Enthalpy",
+        "Entropy",
+        "Gibbs free energy"
+      ],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "chem-007",
+      "name": "Equilibrium",
+      "subtopics": [
+        "Le Chatelier's principle",
+        "Kc and Kp",
+        "Ionic equilibrium",
+        "pH and buffers"
+      ],
+      "weightage": 6,
+      "difficulty": "hard"
+    },
+    {
+      "id": "chem-008",
+      "name": "Redox Reactions",
+      "subtopics": [
+        "Oxidation and reduction",
+        "Oxidation number",
+        "Balancing redox equations",
+        "Electrolytic cells"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-009",
+      "name": "Hydrogen",
+      "subtopics": [
+        "Physical properties",
+        "Chemical properties",
+        "Hydrides",
+        "Heavy water"
+      ],
+      "weightage": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "chem-010",
+      "name": "s-Block Elements",
+      "subtopics": [
+        "Alkali metals",
+        "Alkaline earth metals",
+        "Properties",
+        "Compounds"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-011",
+      "name": "p-Block Elements",
+      "subtopics": ["Group 13-18 elements", "Oxides", "Halides", "Allotropes"],
+      "weightage": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-012",
+      "name": "d and f-Block Elements",
+      "subtopics": [
+        "Transition metals",
+        "Lanthanides and actinides",
+        "Properties",
+        "Complexes"
+      ],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "chem-013",
+      "name": "Coordination Compounds",
+      "subtopics": [
+        "Werner's theory",
+        "Isomerism",
+        "Crystal field theory",
+        "Nomenclature"
+      ],
+      "weightage": 4,
+      "difficulty": "hard"
+    },
+    {
+      "id": "chem-014",
+      "name": "Organic Chemistry - Some Basic Principles",
+      "subtopics": [
+        "Hybridization",
+        "Inductive effect",
+        "Resonance",
+        "Nomenclature"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-015",
+      "name": "Hydrocarbons",
+      "subtopics": ["Alkanes", "Alkenes", "Alkynes", "Aromatic hydrocarbons"],
+      "weightage": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-016",
+      "name": "Environmental Chemistry",
+      "subtopics": [
+        "Pollution",
+        "Green chemistry",
+        "Stratospheric ozone",
+        "Waste management"
+      ],
+      "weightage": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "chem-017",
+      "name": "The Solid State",
+      "subtopics": [
+        "Crystal lattices",
+        "Unit cells",
+        "Defects",
+        "Amorphous solids"
+      ],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-018",
+      "name": "Solutions",
+      "subtopics": [
+        "Types of solutions",
+        "Raoult's law",
+        "Colligative properties",
+        "Abnormal molecular mass"
+      ],
+      "weightage": 4,
+      "difficulty": "hard"
+    },
+    {
+      "id": "chem-019",
+      "name": "Electrochemistry",
+      "subtopics": [
+        "Galvanic cells",
+        "Nernst equation",
+        "Conductance",
+        "Faraday's laws"
+      ],
+      "weightage": 4,
+      "difficulty": "hard"
+    },
+    {
+      "id": "chem-020",
+      "name": "Chemical Kinetics",
+      "subtopics": [
+        "Rate laws",
+        "Order and molecularity",
+        "Arrhenius equation",
+        "Catalysis"
+      ],
+      "weightage": 4,
+      "difficulty": "hard"
+    },
+    {
+      "id": "chem-021",
+      "name": "Surface Chemistry",
+      "subtopics": ["Adsorption", "Catalysis", "Colloids", "Emulsions"],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-022",
+      "name": "General Principles and Processes of Isolation of Elements",
+      "subtopics": [
+        "Occurrence",
+        "Extraction methods",
+        "Refining",
+        "Ellingham diagram"
+      ],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-023",
+      "name": "p-Block Elements (Group 15-18)",
+      "subtopics": [
+        "Nitrogen and its compounds",
+        "Oxygen and ozone",
+        "Halogens",
+        "Noble gases"
+      ],
+      "weightage": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-024",
+      "name": "Aldehydes, Ketones and Carboxylic Acids",
+      "subtopics": [
+        "Preparation",
+        "Properties",
+        "Reactions",
+        "Carboxylic acid derivatives"
+      ],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "chem-025",
+      "name": "Amines",
+      "subtopics": [
+        "Classification",
+        "Preparation",
+        "Properties",
+        "Diazonium salts"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-026",
+      "name": "Biomolecules",
+      "subtopics": ["Carbohydrates", "Proteins", "Nucleic acids", "Vitamins"],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "chem-027",
+      "name": "Polymers",
+      "subtopics": [
+        "Classification",
+        "Preparation",
+        "Properties",
+        "Biodegradable polymers"
+      ],
+      "weightage": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "chem-028",
+      "name": "Chemistry in Everyday Life",
+      "subtopics": [
+        "Drugs and medicines",
+        "Cleansing agents",
+        "Food additives",
+        "Rocket propellants"
+      ],
+      "weightage": 2,
+      "difficulty": "easy"
+    }
+  ],
+  "patterns": {
+    "mcq_count": 45,
+    "numerical_count": 5
+  }
+}

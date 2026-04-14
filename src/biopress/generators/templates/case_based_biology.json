@@ -1,0 +1,67 @@
+{
+  "diabetes": [
+    {
+      "passage": "A 45-year-old patient presents with increased thirst, frequent urination, and unexplained weight loss over the past 3 months. Fasting blood glucose is 180 mg/dL and HbA1c is 8.5%. Family history reveals both parents had diabetes.",
+      "questions": [
+        {
+          "question": "What is the most likely diagnosis?",
+          "answer": "Type 2 Diabetes Mellitus"
+        },
+        {
+          "question": "Which test confirmed the diagnosis?",
+          "answer": "HbA1c"
+        },
+        {
+          "question": "What is the normal HbA1c range?",
+          "answer": "Below 5.7%"
+        },
+        {
+          "question": "What is the fasting blood glucose cutoff for diabetes diagnosis?",
+          "answer": "126 mg/dL or higher"
+        }
+      ]
+    }
+  ],
+  "heart_disease": [
+    {
+      "passage": "A 60-year-old man presents with chest pain radiating to the left arm, associated with sweating and shortness of breath. ECG shows ST elevation in leads II, III, and aVF. Troponin levels are elevated.",
+      "questions": [
+        {
+          "question": "What type of myocardial infarction is indicated?",
+          "answer": "Inferior wall MI"
+        },
+        {
+          "question": "Which coronary artery is most likely blocked?",
+          "answer": "Right coronary artery"
+        },
+        {
+          "question": "What do elevated troponin levels indicate?",
+          "answer": "Cardiac muscle damage"
+        },
+        {
+          "question": "What is the immediate treatment for STEMI?",
+          "answer": "Primary PCI or thrombolysis"
+        }
+      ]
+    }
+  ],
+  "default": [
+    {
+      "passage": "A 30-year-old woman presents with fatigue, weight gain, cold intolerance, and constipation. TSH is elevated and T4 is low.",
+      "questions": [
+        {
+          "question": "What is the most likely diagnosis?",
+          "answer": "Hypothyroidism"
+        },
+        {
+          "question": "What is the elevated TSH indicating?",
+          "answer": "Primary thyroid failure"
+        },
+        {
+          "question": "What is the first-line treatment?",
+          "answer": "Levothyroxine"
+        }
+      ]
+    }
+  ]
+}

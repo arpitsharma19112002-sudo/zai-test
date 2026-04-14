@@ -1,0 +1,116 @@
+{
+  "newton's laws": [
+    {
+      "question": "Which law states that an object at rest tends to stay at rest and an object in motion tends to stay in motion unless acted upon by an external force?",
+      "options": {
+        "A": "Newton's Second Law",
+        "B": "Newton's First Law",
+        "C": "Newton's Third Law",
+        "D": "Law of Gravitation"
+      },
+      "correct_answer": "B",
+      "explanation": "Newton's First Law (Law of Inertia) states that an object will remain at rest or in uniform motion in a straight line unless acted upon by an external force."
+    },
+    {
+      "question": "According to Newton's second law, what is the relationship between force, mass, and acceleration?",
+      "options": {
+        "A": "F = m/a",
+        "B": "F = ma",
+        "C": "F = m + a",
+        "D": "F = m - a"
+      },
+      "correct_answer": "B",
+      "explanation": "Newton's Second Law states that force equals mass times acceleration (F = ma). This is the quantitative definition of force."
+    },
+    {
+      "question": "Newton's third law states that for every action, there is an equal and opposite reaction. Which of the following is an example of this law?",
+      "options": {
+        "A": "A book resting on a table",
+        "B": "A rocket moving upward",
+        "C": "A magnet attracting iron",
+        "D": "A ball rolling on a surface"
+      },
+      "correct_answer": "B",
+      "explanation": "A rocket expels gas downward (action), and the rocket moves upward (reaction). This demonstrates Newton's Third Law."
+    },
+    {
+      "question": "A cricket ball and a tennis ball are dropped from the same height. Which will hit the ground first in the absence of air resistance?",
+      "options": {
+        "A": "Cricket ball",
+        "B": "Tennis ball",
+        "C": "Both hit at the same time",
+        "D": "Depends on the surface"
+      },
+      "correct_answer": "C",
+      "explanation": "In the absence of air resistance, all objects fall at the same rate regardless of their mass due to gravitational acceleration (g = 9.8 m/s²)."
+    },
+    {
+      "question": "What is the SI unit of force?",
+      "options": {
+        "A": "Joule",
+        "B": "Watt",
+        "C": "Newton",
+        "D": "Pascal"
+      },
+      "correct_answer": "C",
+      "explanation": "The Newton (N) is the SI unit of force. 1 N = 1 kg × 1 m/s² (kg·m/s²)."
+    }
+  ],
+  "default": [
+    {
+      "question": "What is the SI unit of force?",
+      "options": {
+        "A": "Joule",
+        "B": "Watt",
+        "C": "Newton",
+        "D": "Pascal"
+      },
+      "correct_answer": "C",
+      "explanation": "The Newton (N) is the SI unit of force. 1 N = 1 kg × 1 m/s²."
+    },
+    {
+      "question": "What is acceleration due to gravity on Earth?",
+      "options": {
+        "A": "9.8 m/s²",
+        "B": "8.9 m/s²",
+        "C": "10 m/s²",
+        "D": "12 m/s²"
+      },
+      "correct_answer": "A",
+      "explanation": "The acceleration due to gravity on Earth is approximately 9.8 m/s²."
+    },
+    {
+      "question": "Force and acceleration are related by which law?",
+      "options": {
+        "A": "Newton's First Law",
+        "B": "Newton's Second Law",
+        "C": "Newton's Third Law",
+        "D": "Law of Conservation of Energy"
+      },
+      "correct_answer": "B",
+      "explanation": "Newton's Second Law states F = ma, linking force and acceleration."
+    },
+    {
+      "question": "The rate of change of momentum is equal to:",
+      "options": {
+        "A": "Force",
+        "B": "Energy",
+        "C": "Work",
+        "D": "Power"
+      },
+      "correct_answer": "A",
+      "explanation": "According to Newton's Second Law, the rate of change of momentum equals applied force."
+    },
+    {
+      "question": "Action and reaction forces act on:",
+      "options": {
+        "A": "Same body",
+        "B": "Different bodies",
+        "C": "Only on stationary bodies",
+        "D": "Only on moving bodies"
+      },
+      "correct_answer": "B",
+      "explanation": "Action-reaction pairs act on different bodies, never on the same body."
+    }
+  ]
+}

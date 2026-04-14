@@ -1,0 +1,334 @@
+{
+  "exam": "NEET",
+  "subject": "Physics",
+  "topics": [
+    {
+      "id": "phy-001",
+      "name": "Units and Measurements",
+      "subtopics": [
+        "Fundamental and derived units",
+        "Dimensional analysis",
+        "Accuracy and precision",
+        "Significant figures"
+      ],
+      "weightage": 3,
+      "difficulty": "easy"
+    },
+    {
+      "id": "phy-002",
+      "name": "Motion in a Straight Line",
+      "subtopics": [
+        "Kinematic equations",
+        "Uniform and non-uniform motion",
+        "Graphs of motion",
+        "Relative motion"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-003",
+      "name": "Motion in a Plane",
+      "subtopics": [
+        "Vectors and scalars",
+        "Projectile motion",
+        "Circular motion",
+        "Relative velocity in 2D"
+      ],
+      "weightage": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-004",
+      "name": "Laws of Motion",
+      "subtopics": [
+        "Newton's laws of motion",
+        "Friction",
+        "Pulley systems",
+        "Free body diagrams"
+      ],
+      "weightage": 8,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-005",
+      "name": "Work, Energy and Power",
+      "subtopics": [
+        "Work done by a force",
+        "Kinetic and potential energy",
+        "Work-energy theorem",
+        "Power"
+      ],
+      "weightage": 6,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-006",
+      "name": "System of Particles and Rotational Motion",
+      "subtopics": [
+        "Center of mass",
+        "Moment of inertia",
+        "Torque and angular momentum",
+        "Rotational kinematics"
+      ],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "phy-007",
+      "name": "Gravitation",
+      "subtopics": [
+        "Newton's law of gravitation",
+        "Gravitational field and potential",
+        "Orbital velocity",
+        "Escape velocity"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-008",
+      "name": "Mechanical Properties of Solids",
+      "subtopics": [
+        "Stress and strain",
+        "Hooke's law",
+        "Young's modulus",
+        "Shear and bulk modulus"
+      ],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-009",
+      "name": "Mechanical Properties of Fluids",
+      "subtopics": [
+        "Pressure",
+        "Buoyancy",
+        "Bernoulli's principle",
+        "Viscosity"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-010",
+      "name": "Thermal Properties of Matter",
+      "subtopics": [
+        "Heat and temperature",
+        "Specific heat capacity",
+        "Heat transfer",
+        "Latent heat"
+      ],
+      "weightage": 4,
+      "difficulty": "easy"
+    },
+    {
+      "id": "phy-011",
+      "name": "Thermodynamics",
+      "subtopics": [
+        "Laws of thermodynamics",
+        "Heat engines",
+        "Carnot cycle",
+        "Entropy"
+      ],
+      "weightage": 6,
+      "difficulty": "hard"
+    },
+    {
+      "id": "phy-012",
+      "name": "Kinetic Theory",
+      "subtopics": [
+        "Ideal gas law",
+        "Kinetic theory assumptions",
+        "Degrees of freedom",
+        "Mean free path"
+      ],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-013",
+      "name": "Oscillations",
+      "subtopics": [
+        "Simple harmonic motion",
+        "Damped and forced oscillations",
+        "Wave motion",
+        "Resonance"
+      ],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "phy-014",
+      "name": "Waves",
+      "subtopics": [
+        "Wave equation",
+        "Standing waves",
+        "Doppler effect",
+        "Beats"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-015",
+      "name": "Electric Charges and Fields",
+      "subtopics": [
+        "Coulomb's law",
+        "Electric field and potential",
+        "Gauss's law",
+        "Capacitors"
+      ],
+      "weightage": 6,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-016",
+      "name": "Electrostatics",
+      "subtopics": [
+        "Electric dipole",
+        "Dielectrics",
+        "Energy in capacitor",
+        "Series and parallel"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-017",
+      "name": "Current Electricity",
+      "subtopics": [
+        "Ohm's law",
+        "Kirchhoff's laws",
+        "Wheatstone bridge",
+        "Potentiometer"
+      ],
+      "weightage": 6,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-018",
+      "name": "Moving Charges and Magnetism",
+      "subtopics": [
+        "Biot-Savart law",
+        "Ampere's law",
+        "Force on moving charge",
+        "Magnetic moment"
+      ],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "phy-019",
+      "name": "Magnetism and Matter",
+      "subtopics": [
+        "Magnetic materials",
+        "Earth's magnetism",
+        "Hysteresis",
+        "Magnetic shielding"
+      ],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-020",
+      "name": "Electromagnetic Induction",
+      "subtopics": [
+        "Faraday's laws",
+        "Lenz's law",
+        "Inductance",
+        "AC generator"
+      ],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "phy-021",
+      "name": "Alternating Current",
+      "subtopics": [
+        "AC voltage and current",
+        "LC and LR circuits",
+        "Resonance in AC",
+        "Power in AC"
+      ],
+      "weightage": 4,
+      "difficulty": "hard"
+    },
+    {
+      "id": "phy-022",
+      "name": "Electromagnetic Waves",
+      "subtopics": [
+        "EM spectrum",
+        "Displacement current",
+        "Poynting vector",
+        "Radiation pressure"
+      ],
+      "weightage": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-023",
+      "name": "Ray Optics and Optical Instruments",
+      "subtopics": [
+        "Reflection and refraction",
+        "Lenses and mirrors",
+        "Optical instruments",
+        "Total internal reflection"
+      ],
+      "weightage": 6,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-024",
+      "name": "Wave Optics",
+      "subtopics": [
+        "Interference",
+        "Diffraction",
+        "Polarization",
+        "Young's double slit"
+      ],
+      "weightage": 5,
+      "difficulty": "hard"
+    },
+    {
+      "id": "phy-025",
+      "name": "Dual Nature of Radiation and Matter",
+      "subtopics": [
+        "Photoelectric effect",
+        "Matter waves",
+        "de Broglie hypothesis",
+        "Photoelectric equation"
+      ],
+      "weightage": 4,
+      "difficulty": "hard"
+    },
+    {
+      "id": "phy-026",
+      "name": "Atoms and Nuclei",
+      "subtopics": [
+        "Bohr model",
+        "Radioactivity",
+        "Nuclear reactions",
+        "Binding energy"
+      ],
+      "weightage": 5,
+      "difficulty": "medium"
+    },
+    {
+      "id": "phy-027",
+      "name": "Semiconductor Electronics",
+      "subtopics": [
+        "P-N junction",
+        "Transistors",
+        "Logic gates",
+        "Applications"
+      ],
+      "weightage": 4,
+      "difficulty": "medium"
+    }
+  ],
+  "patterns": {
+    "mcq_count": 45,
+    "numerical_count": 5
+  }
+}
