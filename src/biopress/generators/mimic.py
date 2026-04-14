@@ -271,21 +271,28 @@ class MimicGenerator:
         generator = MCQGenerator()
         generated_questions = []
 
-        difficulty_topics = {
-            "easy": ["basic", "definition", "concept"],
-            "medium": ["application", "problem", "situation"],
-            "hard": ["analysis", "comparison", "multiple"],
-            "very_hard": ["critical", "synthesis", "evaluation"],
+        target_topics = list(pattern.topic_weights.keys()) if hasattr(pattern, 'topic_weights') and pattern.topic_weights else []
+        
+        difficulty_modifiers = {
+            "easy": ["basic", "conceptual", "straightforward"],
+            "medium": ["applied", "numerical", "multi-step"],
+            "hard": ["complex", "analytical", "synthesis"],
+            "very_hard": ["expert", "advanced", "critical thinking"],
         }
+
+        import logging
+        logger = logging.getLogger(__name__)
 
         for difficulty, num in distribution.items():
             if num <= 0:
                 continue
-            topics = difficulty_topics.get(difficulty, ["basic"])
+                
+            modifiers = difficulty_modifiers.get(difficulty, ["standard"])
+            
             for i in range(num):
-                topic = topics[i % len(topics)]
-                keywords = self.TOPIC_KEYWORDS.get(topic, [topic])
-                actual_topic = f"{topic} {keywords[0]}" if keywords else topic
+                base_topic = target_topics[i % len(target_topics)] if target_topics else subject
+                modifier = modifiers[i % len(modifiers)]
+                actual_topic = f"{modifier} {base_topic}"
 
                 quiz = generator.generate(
                     exam=exam,
@@ -293,6 +300,7 @@ class MimicGenerator:
                     count=1,
                     topic=actual_topic,
                 )
+                
                 if quiz and quiz.items:
                     question = quiz.items[0]
                     q_dict = {
@@ -300,16 +308,12 @@ class MimicGenerator:
                         "options": list(question.options.model_dump().values()) if hasattr(question.options, 'model_dump') else [],
                         "correct_answer": question.correct_answer,
                         "explanation": question.explanation,
+                        "difficulty": difficulty
                     }
+                    generated_questions.append(q_dict)
                 else:
-                    q_dict = {
-                        "question": f"Sample {difficulty} question for {topic}",
-                        "options": ["A", "B", "C", "D"],
-                        "correct_answer": "A",
-                        "explanation": f"Explanation for {topic}",
-                    }
-                q_dict["difficulty"] = difficulty
-                generated_questions.append(q_dict)
+                    logger.warning(f"Mimic Mode failed to generate a {difficulty} question for '{actual_topic}'. Dropping to maintain integrity.")
+                    continue
 
         return generated_questions
 

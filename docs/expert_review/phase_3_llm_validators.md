@@ -253,7 +253,17 @@ Status as of Phase 7.2 Hardening Sweep:
 | CRIT-6 | Difficulty Scoring Logic | ✅ COMPLETED | Fixed in `difficulty_checker.py` to use expected scale (0.0-1.0). |
 | CRIT-1 | Silent Adapter Fallbacks | ⏳ PENDING | Adapters still return fallback strings in some cases; needs loud fail mode. |
 | CRIT-2 | Fake `validate_content()` | ⏳ PENDING | Adapter-level validation still hardcoded. |
-| CRIT-5 | Claude Token Counting | ⏳ PENDING | Still uses heuristic; needs usage stats switch. |
+| CRIT-5 | Claude Token Counting | ✅ COMPLETED | `claude.py` parsing exact token usage from payload `data["usage"]["input_tokens"]`. |
+
+---
+
+## 🛠 Sprint 6 Implementation Details (Phase 8 Execution)
+
+**Goal:** Cleanse the pipeline of mock/fake data generation and fix token counting heuristics.
+
+### 1. Accurate Claude Token Tracing
+- **Logic:** `claude.py` was rewritten to extract anthropic endpoint usage data (`input_tokens`, `output_tokens`) instead of approximating via Python word split counts.
+- **Pros:** Protects against expensive budget limit run-aways, providing perfectly synchronized cost tracking.
 
 
 ---

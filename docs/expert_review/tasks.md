@@ -69,10 +69,10 @@
 - [x] P2-CRIT-3: Implement LLM-backed content translation in `translator.py`.
 
 #### Sprint 6: Data & Diagram Integrity (Phase 2 & 3 Fixes)
-- [ ] P2-CRIT-4 & P2-CRIT-5: Fix Mimic generator topic mapping and prevent fake question injection.
-- [ ] P2-CRIT-7: Implement actual API calls (or safe fallbacks) for diagram sources.
-- [ ] P3-CRIT-5: Update Claude adapter to parse exact token usage instead of heuristics.
-- [ ] P2-ARCH-4: Add initial template data to KB layout directory.
+- [x] P2-CRIT-4 & P2-CRIT-5: Fix Mimic generator topic mapping and prevent fake question injection.
+- [x] P2-CRIT-7: Implement actual API calls (or safe fallbacks) for diagram sources.
+- [x] P3-CRIT-5: Update Claude adapter to parse exact token usage instead of heuristics.
+- [x] P2-ARCH-4: Add initial template data to KB layout directory.
 
 #### Sprint 7: PDF & Visual Editor UX (Phase 4 Fixes)
 - [ ] P4-ARCH-2: Integrate `matplotlib.mathtext` or `sympy` for LaTeX rendering in PDFs.

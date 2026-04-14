@@ -50,8 +50,11 @@ class ClaudeAdapter(LLMAdapter):
             )
             response.raise_for_status()
             data = response.json()
-            tokens_in = len(prompt.split()) * 1.3
-            tokens_out = len(data["content"][0]["text"].split()) * 1.3
+            
+            usage = data.get("usage", {})
+            tokens_in = usage.get("input_tokens", len(prompt.split()) * 1.3)
+            tokens_out = usage.get("output_tokens", len(data.get("content", [{}])[0].get("text", "").split()) * 1.3)
+            
             self.cost_manager.add_cost(self.name, int(tokens_in), int(tokens_out))
             return data["content"][0]["text"]
         except (LLMConnectionError, BudgetExceededError):

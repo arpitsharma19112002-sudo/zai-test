@@ -226,11 +226,22 @@ Status as of Phase 7.2 Hardening Sweep:
 | CRIT-6 | Generators Exports | ✅ COMPLETED | All generators, translators, and sources re-exported in `biopress.generators`. |
 | CRIT-1 | LLM Integration | ✅ COMPLETED | `BaseGenerator` implements dual-mode static+LLM generation fallback. |
 | CRIT-3 | Actual Translation | ✅ COMPLETED | `translator.py` batches translations via LLM with pure UI-label dictionary fallback. |
-| CRIT-7 | Diagram Sourcing | ⏳ PENDING | Sources remain URL-pattern based stubs. |
+| CRIT-4 | Mimic Fake Questions | ✅ COMPLETED | Stripped placeholder dict generation. Prompts rely directly on LLM mappings. |
+| CRIT-5 | Mimic Topic Mapping | ✅ COMPLETED | Maps statistical patterns directly to descriptive text blocks. |
+| CRIT-7 | Diagram Sourcing | ✅ COMPLETED | Generates filesystem asset pointers and logs terminal prompts for manual download mapping. |
 
 ---
 
-## 🛠 Sprint 5 Implementation Details (Phase 8 Execution)
+## 🛠 Sprint 6 Implementation Details (Phase 8 Execution)
+
+**Goal:** Cleanse the pipeline of mock/fake data generation and fix token counting heuristics.
+
+### 1. Robust Diagram Source Pointing
+- **Logic:** Instead of faking HTTP requests to OERs that will fail, `diagram_source.py` was refactored to look for `assets/diagrams/{source}/{term}.(png|svg)`.
+- **Pros:** Prevents pipeline failures downstream and forces users to map verified authentic visual data, maintaining high platform integrity.
+
+### 2. Mimic Statistical Generation Clean-Up
+- **Logic:** `mimic.py` no longer attempts to inject strings like `"Sample medium question for basic"`. It correctly calculates topic distribution weights, constructs explicit text keywords (e.g. `complex mechanics`), and hands these securely to `BaseGenerator` for proper LLM processing.
 
 **Goal:** Provide True GenAI capabilities without sacrificing offline reliability.
 
