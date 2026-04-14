@@ -1,7 +1,9 @@
 """Core data models for BioPress."""
 
+from __future__ import annotations
 from pydantic import BaseModel, Field
 from enum import Enum
+from typing import List, Dict, Union
 
 
 class ExamType(str, Enum):
@@ -44,20 +46,20 @@ class MCQItem(BaseModel):
 
 class PerseusQuiz(BaseModel):
     """Perseus JSON format for quiz export."""
-    items: list[MCQItem] = Field(default_factory=list)
+    items: List[MCQItem] = Field(default_factory=list)
 
 
 class NumericalItem(BaseModel):
     """Numerical question with step-by-step solution."""
     question: str
-    answer: float | int
-    solution_steps: list[str]
+    answer: Union[float, int]
+    solution_steps: List[str]
     units: str = ""
 
 
 class NumericalQuiz(BaseModel):
     """Quiz containing numerical questions."""
-    items: list[NumericalItem] = Field(default_factory=list)
+    items: List[NumericalItem] = Field(default_factory=list)
 
 
 class CaseBasedSubQuestion(BaseModel):
@@ -69,12 +71,12 @@ class CaseBasedSubQuestion(BaseModel):
 class CaseBasedItem(BaseModel):
     """Case-based question with passage and sub-questions."""
     passage: str
-    questions: list[CaseBasedSubQuestion]
+    questions: List[CaseBasedSubQuestion]
 
 
 class CaseBasedQuiz(BaseModel):
     """Quiz containing case-based questions."""
-    items: list[CaseBasedItem] = Field(default_factory=list)
+    items: List[CaseBasedItem] = Field(default_factory=list)
 
 
 class AssertionReasonItem(BaseModel):
@@ -87,12 +89,12 @@ class AssertionReasonItem(BaseModel):
 
 class AssertionReasonQuiz(BaseModel):
     """Quiz containing assertion-reason questions."""
-    items: list[AssertionReasonItem] = Field(default_factory=list)
+    items: List[AssertionReasonItem] = Field(default_factory=list)
 
 
 class BatchQuiz(BaseModel):
     """Batch quiz containing multiple question types."""
-    items: list = Field(default_factory=list)
-    type_counts: dict = Field(default_factory=dict)
+    items: List = Field(default_factory=list)
+    type_counts: Dict = Field(default_factory=dict)
     generation_time: float = 0.0
-    metrics: dict = Field(default_factory=dict)
+    metrics: Dict = Field(default_factory=dict)

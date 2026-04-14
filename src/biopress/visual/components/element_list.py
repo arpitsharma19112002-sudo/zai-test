@@ -24,7 +24,7 @@ def create_element_list(app_state, on_select: Callable = None):
                 
                 is_selected = idx == app_state.selected_index
                 
-                with ui.card().classes("cursor-pointer"):
+                with ui.card().classes("cursor-pointer").on_click(lambda i=idx: select_element(i)):
                     if is_selected:
                         ui.label(f"Q{idx + 1}").classes("text-subtitle-2 font-bold text-primary")
                     else:
@@ -37,13 +37,6 @@ def create_element_list(app_state, on_select: Callable = None):
                         ui.label(f"Answer: {correct}").classes("text-caption text-green")
                 
                 ui.element("div").classes("h-2")
-                
-                def make_click_handler(index: int):
-                    def click_handler():
-                        select_element(index)
-                    return click_handler
-                
-                ui.element("div").classes("cursor-pointer").on_click(make_click_handler(idx))
 
     def select_element(index: int):
         app_state.selected_index = index

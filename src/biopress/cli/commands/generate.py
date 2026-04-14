@@ -161,10 +161,6 @@ def _execute_generation(
         )
         raise typer.Exit(1)
 
-    if language:
-        config_mgr = get_config_manager()
-        config_mgr.set("language", language)
-
     resolved_language = _resolve_language(language)
 
     if exam not in VALID_EXAMS:
@@ -206,38 +202,32 @@ def _execute_generation(
         current_step = 0
 
         try:
-            progress.update(main_task, description=f"Step 1/4: {STEPS[0]}...")
+            # Step 1: Initialization
+            progress.update(main_task, description=f"Step 1/4: {STEPS[0]}...", completed=5)
             display_step_status(console, current_step)
-            progress.update(main_task, completed=5)
-
-            time.sleep(0.1)
-
             current_step = 1
-            progress.update(main_task, description=f"Step 2/4: {STEPS[1]}...")
-            display_step_status(console, current_step)
-            progress.update(main_task, completed=15)
 
+            # Step 2: Generation (The heavy lifter)
+            progress.update(main_task, description=f"Step 2/4: {STEPS[1]}...", completed=15)
+            display_step_status(console, current_step)
+            
             json_output, valid_count = _generate_questions(
                 exam, subject, type, count, topic, resolved_language, console
             )
-
-            for i in range(0, 100, 10):
-                if i < 70:
-                    progress.update(main_task, completed=15 + int(i * 0.7))
-                time.sleep(0.05)
-
+            
+            progress.update(main_task, completed=75)
             current_step = 2
-            progress.update(main_task, description=f"Step 3/4: {STEPS[2]}...")
-            display_step_status(console, current_step)
-            progress.update(main_task, completed=85)
 
+            # Step 3: Validation
+            progress.update(main_task, description=f"Step 3/4: {STEPS[2]}...", completed=85)
+            display_step_status(console, current_step)
             current_step = 3
-            progress.update(main_task, description=f"Step 4/4: {STEPS[3]}...")
+
+            # Step 4: Finalizing
+            progress.update(main_task, description=f"Step 4/4: {STEPS[3]}...", completed=95)
             display_step_status(console, current_step)
-            progress.update(main_task, completed=90)
-
+            
             progress.update(main_task, completed=100)
-
             current_step = 4
             display_step_status(console, current_step)
 

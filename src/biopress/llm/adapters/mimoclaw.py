@@ -1,7 +1,9 @@
 """MiMo Claw adapter."""
 
-from biopress.llm.adapters.base import LLMAdapter, LLMConnectionError, ValidationResult
 from biopress.core.config import get_config_manager
+from biopress.core.errors import LLMConnectionError
+from biopress.core.types import ValidationResult
+from biopress.llm.adapters.base import LLMAdapter
 
 
 class MiMoClawAdapter(LLMAdapter):

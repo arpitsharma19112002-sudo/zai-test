@@ -2,7 +2,7 @@
 
 import re
 
-from biopress.validators.l2.types import ValidationResult
+from biopress.core.types import ValidationResult
 
 
 VALID_GRADE_LEVELS = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"}

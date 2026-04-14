@@ -27,6 +27,7 @@ from biopress.pdf.components.question import render_question
 from biopress.pdf.components.omr import render_omr_sheet
 from biopress.pdf.review_section import ReviewSectionGenerator
 from biopress.pdf.fonts import ensure_fonts_for_style
+from biopress.pdf.utils.latex_renderer import LaTeXRenderer
 
 
 STYLE_MAP = {
@@ -69,6 +70,9 @@ class PDFRenderer:
         
         # Register any special fonts the style requires
         ensure_fonts_for_style(self.style)
+        
+        # Initialize LaTeX renderer
+        self.latex_renderer = LaTeXRenderer()
     
     def _style_wants_omr(self) -> bool:
         """Check if the current style implies OMR sheet generation."""
@@ -154,6 +158,7 @@ class PDFRenderer:
                 self.question_style,
                 self.option_style,
                 4,
+                latex_renderer=self.latex_renderer,
             )
             story.extend(question_elements)
             story.append(Spacer(1, 15))

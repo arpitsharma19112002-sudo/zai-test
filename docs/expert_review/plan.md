@@ -230,11 +230,11 @@ Each phase reads **~1,000–1,500 LOC** so we stay well within model context lim
 - [x] P3-CRIT-5: Update Claude adapter to parse exact token usage instead of heuristics.
 - [x] P2-ARCH-4: Add initial template data to KB layout directory.
 
-#### Sprint 7: PDF & Visual Editor UX (Phase 4 Fixes)
-- [ ] P4-ARCH-2: Integrate `matplotlib.mathtext` or `sympy` for LaTeX rendering in PDFs.
-- [ ] P4-CRIT-2: Fix NiceGUI variable-before-definition closure bug in `editor.py`.
-- [ ] P4-CRIT-4: Fix missing click handler attachment in `element_list.py` cards.
-- [ ] P4-ARCH-3: Migrate NiceGUI global app state to proper per-session storage.
+#### Sprint 7: PDF & Visual Editor UX ✅ (Phase 4 Fixes)
+- [x] P4-ARCH-2: Integrate `matplotlib.mathtext` or `sympy` for LaTeX rendering in PDFs.
+- [x] P4-CRIT-2: Fix NiceGUI variable-before-definition closure bug in `editor.py`.
+- [x] P4-CRIT-4: Fix missing click handler attachment in `element_list.py` cards.
+- [x] P4-ARCH-3: Migrate NiceGUI global app state to proper per-session storage.
 
 #### Sprint 8: CLI/API Polish (Phase 5 Fixes)
 - [ ] P5-CRIT-4: Ensure CLI `--language` flags don't permanently side-effect the global `.json` config.

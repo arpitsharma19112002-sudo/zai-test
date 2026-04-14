@@ -11,7 +11,7 @@ from biopress.validators.l2.context_checker import ContextChecker
 from biopress.validators.l2.single_pass import (
     SinglePassValidator,
 )
-from biopress.validators.l2.types import ValidationResult
+from biopress.core.types import ValidationResult, L2Result
 
 logger = logging.getLogger(__name__)
 

@@ -2,7 +2,7 @@
 
 import re
 
-from biopress.validators.l2.types import ValidationResult
+from biopress.core.types import ValidationResult
 
 
 class RelevanceChecker:

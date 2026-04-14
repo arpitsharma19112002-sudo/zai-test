@@ -1,5 +1,6 @@
 """Base Generator for dual-mode LLM and static template generation."""
 
+from __future__ import annotations
 import json
 import re
 from pathlib import Path
@@ -21,7 +22,7 @@ class BaseGenerator(Generic[T_Quiz, T_Item]):
     QUIZ_CLASS: Type[T_Quiz]
     ITEM_CLASS: Type[T_Item]
     
-    def __init__(self, templates_dir: str | None = None, use_llm: bool = True):
+    def __init__(self, templates_dir: Optional[str] = None, use_llm: bool = True):
         if templates_dir:
             self.templates_dir = Path(templates_dir)
         else:

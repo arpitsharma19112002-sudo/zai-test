@@ -1,7 +1,8 @@
 """Validation rules for knowledge base."""
 
+from __future__ import annotations
 from pydantic import BaseModel, Field
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 
 
 class Rule(BaseModel):

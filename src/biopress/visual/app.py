@@ -10,22 +10,37 @@ from biopress.visual.pages.editor import create_editor_page
 
 
 class AppState:
-    """Global application state."""
+    """Session-scoped application state."""
 
-    def __init__(self):
-        self.current_file: Optional[str] = None
-        self.content: dict = {"items": []}
-        self.selected_index: int = 0
-        self.modified: bool = False
-        self.pdf_path: Optional[str] = None
+    def __init__(self, data: dict = None):
+        data = data or {}
+        self.current_file: Optional[str] = data.get("current_file")
+        self.content: dict = data.get("content", {"items": []})
+        self.selected_index: int = data.get("selected_index", 0)
+        self.modified: bool = data.get("modified", False)
+        self.pdf_path: Optional[str] = data.get("pdf_path")
 
-
-app_state = AppState()
+    def to_dict(self) -> dict:
+        """Convert state to a dictionary for storage."""
+        return {
+            "current_file": self.current_file,
+            "content": self.content,
+            "selected_index": self.selected_index,
+            "modified": self.modified,
+            "pdf_path": self.pdf_path,
+        }
 
 
 def get_app_state() -> AppState:
-    """Get the global app state instance."""
-    return app_state
+    """Get the session-scoped app state instance."""
+    if "app_state" not in ui.storage.user:
+        ui.storage.user["app_state"] = AppState().to_dict()
+    return AppState(ui.storage.user["app_state"])
+
+
+def save_app_state(state: AppState):
+    """Save the app state back to session storage."""
+    ui.storage.user["app_state"] = state.to_dict()
 
 
 def create_review_app() -> None:
@@ -33,6 +48,8 @@ def create_review_app() -> None:
 
     @ui.page("/")
     def main_page():
+        app_state = get_app_state()
+        
         with ui.header(elevated=True).classes("items-center justify-between"):
             ui.label("BioPress Review Tool").classes("text-h5")
             with ui.row():
@@ -54,11 +71,16 @@ def create_review_app() -> None:
 
     def select_element(index: int):
         """Handle element selection."""
-        app_state.selected_index = index
+        state = get_app_state()
+        state.selected_index = index
+        save_app_state(state)
+        ui.navigate.to("/")  # Refresh to update editor
 
     def save_changes():
         """Save changes to the content."""
-        app_state.modified = True
+        state = get_app_state()
+        state.modified = True
+        save_app_state(state)
 
     def load_file():
         """Load a JSON file for review."""
@@ -66,10 +88,12 @@ def create_review_app() -> None:
 
     def save_file():
         """Save the current content to file."""
-        if app_state.current_file:
-            with open(app_state.current_file, "w") as f:
-                json.dump(app_state.content, f, indent=2)
-            app_state.modified = False
+        state = get_app_state()
+        if state.current_file:
+            with open(state.current_file, "w") as f:
+                json.dump(state.content, f, indent=2)
+            state.modified = False
+            save_app_state(state)
             ui.notify("File saved successfully", type="positive")
 
     def export_pdf():
@@ -94,17 +118,25 @@ def create_review_app() -> None:
 
         def do_load(path: str):
             if path and os.path.exists(path):
+                state = get_app_state()
                 with open(path) as f:
-                    app_state.content = json.load(f)
-                app_state.current_file = path
-                app_state.selected_index = 0
-                app_state.modified = False
+                    state.content = json.load(f)
+                state.current_file = path
+                state.selected_index = 0
+                state.modified = False
+                save_app_state(state)
                 ui.navigate.to("/")
                 ui.notify(f"Loaded: {path}", type="positive")
             else:
                 ui.notify("File not found", type="negative")
 
-    ui.run(title="BioPress Review Tool", port=8080, reload=False)
+    # Use a fixed storage_secret for persistence across restarts
+    ui.run(
+        title="BioPress Review Tool", 
+        port=8080, 
+        reload=False, 
+        storage_secret="biopress_secret_key_2026"
+    )
 
 
 def load_content_from_file(file_path: str) -> bool:

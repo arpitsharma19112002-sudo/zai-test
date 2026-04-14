@@ -1,12 +1,13 @@
 """Batch question generator for multiple types with performance optimization."""
 
+from __future__ import annotations
 import json
 import logging
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from threading import Lock
-from typing import Any, Callable
+from typing import Any, Callable, Optional, List, Dict, Union
 from biopress.core.models import BatchQuiz
 
 from biopress.generators.questions.mcq import MCQGenerator

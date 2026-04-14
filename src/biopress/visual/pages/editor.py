@@ -9,6 +9,10 @@ from nicegui import ui
 def create_editor_page(app_state, on_save: Callable = None):
     """Create the editor page for editing question content."""
     from biopress.core.memory import get_memory
+    
+    # Store references to inputs locally to avoid scoping issues
+    refs = {}
+
     with ui.card().classes("w-full h-full"):
         with ui.row().classes("w-full justify-between items-center"):
             ui.label("Editor").classes("text-h6")
@@ -35,7 +39,7 @@ def create_editor_page(app_state, on_save: Callable = None):
                 if item.get("diagram"):
                     ui.label(f"📊 Diagram: {item.get('diagram', 'None')}").classes("text-caption")
 
-            question_input = ui.input(
+            refs['question'] = ui.input(
                 label="Question",
                 value=item.get("question", "")
             ).classes("w-full")
@@ -50,33 +54,33 @@ def create_editor_page(app_state, on_save: Callable = None):
                     ui.label("Options").classes("text-subtitle-2")
                     options = item.get("options", {})
 
-                    option_a = ui.input(
+                    refs['A'] = ui.input(
                         label="A",
                         value=options.get("A", "")
                     ).classes("w-full")
 
-                    option_b = ui.input(
+                    refs['B'] = ui.input(
                         label="B",
                         value=options.get("B", "")
                     ).classes("w-full")
 
-                    option_c = ui.input(
+                    refs['C'] = ui.input(
                         label="C",
                         value=options.get("C", "")
                     ).classes("w-full")
 
-                    option_d = ui.input(
+                    refs['D'] = ui.input(
                         label="D",
                         value=options.get("D", "")
                     ).classes("w-full")
 
-                    correct = ui.select(
+                    refs['correct'] = ui.select(
                         label="Correct Answer",
                         options=["A", "B", "C", "D"],
                         value=item.get("correct_answer", "A")
                     ).classes("w-full")
 
-                    explanation = ui.textarea(
+                    refs['explanation'] = ui.textarea(
                         label="Explanation",
                         value=item.get("explanation", "")
                     ).classes("w-full")
@@ -84,18 +88,18 @@ def create_editor_page(app_state, on_save: Callable = None):
                 with ui.tab_panel(diagram_tab):
                     ui.label("Diagram Replacement").classes("text-subtitle-2 mb-2")
                     current_diagram = item.get("diagram", "")
-                    diagram_input = ui.input(
+                    refs['diagram'] = ui.input(
                         label="Diagram Path/URL",
                         value=current_diagram,
                         placeholder="Enter diagram file path or URL"
                     ).classes("w-full")
+                    
                     with ui.row():
                         ui.button("Browse", icon="folder_open", on_click=lambda: browse_diagram()).props("flat")
-                        ui.button("Clear", icon="clear", on_click=lambda: clear_diagram(_diagram_input_ref)).props("flat")
+                        ui.button("Clear", icon="clear", on_click=lambda: clear_diagram(refs['diagram'])).props("flat")
+                    
                     if current_diagram:
                         ui.label(f"Current: {current_diagram}").classes("text-caption")
-                    
-                    _diagram_input_ref = diagram_input
 
                 with ui.tab_panel(dashboard_tab):
                     create_progress_dashboard(app_state)
@@ -104,14 +108,14 @@ def create_editor_page(app_state, on_save: Callable = None):
                 "Save Changes",
                 icon="save",
                 on_click=lambda: save_changes(
-                    question_input.value,
-                    option_a.value,
-                    option_b.value,
-                    option_c.value,
-                    option_d.value,
-                    correct.value,
-                    explanation.value,
-                    diagram_input.value if 'diagram_input' in dir() else item.get("diagram", "")
+                    refs['question'].value,
+                    refs['A'].value,
+                    refs['B'].value,
+                    refs['C'].value,
+                    refs['D'].value,
+                    refs['correct'].value,
+                    refs['explanation'].value,
+                    refs.get('diagram', {}).value if 'diagram' in refs else item.get("diagram", "")
                 )
             ).props("color=primary")
 
@@ -125,11 +129,12 @@ def create_editor_page(app_state, on_save: Callable = None):
         explanation: str,
         diagram: str = ""
     ):
-        item = app_state.content["items"][app_state.selected_index]
+        idx = app_state.selected_index
+        item = app_state.content["items"][idx]
         original = f"{item.get('question', '')}:{item.get('explanation', '')}"
         corrected = f"{question}:{explanation}"
 
-        app_state.content["items"][app_state.selected_index] = {
+        app_state.content["items"][idx] = {
             "question": question,
             "options": {"A": a, "B": b, "C": c, "D": d},
             "correct_answer": correct,

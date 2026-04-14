@@ -1,7 +1,10 @@
 """Claude adapter."""
 
+from biopress.core.config import get_config_manager
+from biopress.core.cost_manager import get_cost_manager
 from biopress.core.errors import LLMConnectionError, BudgetExceededError
 from biopress.core.types import ValidationResult
+from biopress.llm.adapters.base import LLMAdapter
 
 
 class ClaudeAdapter(LLMAdapter):

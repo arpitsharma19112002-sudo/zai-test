@@ -1,18 +1,17 @@
 """PDF styles package."""
 
-from biopress.pdf.styles.default import PDFStyle, get_style, DEFAULT, NEET
-from biopress.pdf.styles.ncert import get_ncert_style
-from biopress.pdf.styles.bilingual import get_bilingual_style, BILINGUAL
-from biopress.pdf.styles.omr import get_omr_style, OMR_READY
+from biopress.pdf.styles.default import PDFStyle, get_style, DEFAULT
+from biopress.pdf.styles.neet import NEET_2COLUMN
+from biopress.pdf.styles.ncert import NCERT
+from biopress.pdf.styles.bilingual import BILINGUAL
+from biopress.pdf.styles.omr import OMR_READY
 
 __all__ = [
     "PDFStyle",
     "get_style",
     "DEFAULT",
-    "NEET",
-    "get_ncert_style",
-    "get_bilingual_style",
+    "NEET_2COLUMN",
+    "NCERT",
     "BILINGUAL",
-    "get_omr_style",
     "OMR_READY",
 ]

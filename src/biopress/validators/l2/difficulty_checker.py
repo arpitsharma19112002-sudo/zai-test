@@ -1,7 +1,7 @@
 """L2 Difficulty Checker - validates question difficulty level."""
 
 
-from biopress.validators.l2.types import ValidationResult
+from biopress.core.types import ValidationResult
 
 
 VALID_DIFFICULTY_LEVELS = {"easy", "medium", "hard"}

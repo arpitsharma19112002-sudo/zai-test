@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass, field
 
-from biopress.validators.l2.types import ValidationResult
+from biopress.core.types import ValidationResult
 
 
 EXAM_RULES = {
